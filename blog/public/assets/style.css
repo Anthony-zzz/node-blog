@@ -1,0 +1,59 @@
+/* Blog — estilos complementares ao Bootstrap */
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.3rem;
+  letter-spacing: -0.3px;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Formulários */
+.form-control {
+  border-radius: 8px;
+  border-color: #dee2e6;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #343a40;
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.15);
+}
+
+textarea.form-control {
+  min-height: 200px;
+  resize: vertical;
+}
+
+/* Conteúdo do post */
+.post-content p {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* Botões */
+.btn {
+  border-radius: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 576px) {
+  .card-body {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
